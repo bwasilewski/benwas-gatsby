@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import uniqid from 'uniqid'
 
 const Project = ({ title, description, timeline, tags }) => (
   <section className="section">
@@ -6,11 +8,11 @@ const Project = ({ title, description, timeline, tags }) => (
     <div className="columns">
       <div className="column is-two-thirds">
         {tags.length > 0 && (
-        <div className="tags">
-          {tags.map(tag => (
-            <span className="tag is-primary">{tag}</span>
-          ))}
-        </div>
+          <div className="tags">
+            {tags.map(tag => (
+              <span key={uniqid()} className="tag is-primary">{tag}</span>
+            ))}
+          </div>
         )}
         <small>{timeline.begin} to {timeline.end}</small>
         <p>{description}</p>
@@ -21,5 +23,12 @@ const Project = ({ title, description, timeline, tags }) => (
     </div>
   </section>
 )
+
+Project.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  timeline: PropTypes.object,
+  tags: PropTypes.array,
+}
 
 export default Project

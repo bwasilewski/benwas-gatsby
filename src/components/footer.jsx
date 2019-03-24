@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import uniqid from 'uniqid'
 
@@ -22,7 +23,7 @@ const Footer = ({siteTitle, social}) => (
           </div>
           <div className="navbar-end">
             <div className="navbar-item">
-              © {new Date().getFullYear()}, {siteTitle}. All rizzles for shizzle.
+              <small>© {new Date().getFullYear()}, {siteTitle}. All rizzles for shizzle.</small>
             </div>
           </div>
         </div>
@@ -30,6 +31,11 @@ const Footer = ({siteTitle, social}) => (
     </nav>
   </footer>
 )
+
+Footer.propTypes = {
+  siteTitle: PropTypes.string,
+  social: PropTypes.array
+}
 
 
 export default Footer
