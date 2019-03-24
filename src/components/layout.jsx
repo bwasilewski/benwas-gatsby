@@ -21,6 +21,11 @@ const Layout = ({ children }) => (
           siteMetadata {
             title
             subtitle
+            social_media {
+              title
+              url
+              icon
+            }
           }
         }
       }
@@ -29,11 +34,14 @@ const Layout = ({ children }) => (
       <>
         <Header
           siteTitle={data.site.siteMetadata.title}
-          siteSubtitle={data.site.siteMetadata.subtitle} />
+          siteSubtitle={data.site.siteMetadata.subtitle}
+          social={data.site.siteMetadata.social_media} />
+
         <main>{children}</main>
+
         <Footer
           siteTitle={data.site.siteMetadata.title}
-          siteSubtitle={data.site.siteMetadata.subtitle} />
+          social={data.site.siteMetadata.social_media} />
       </>
     )}
   />
