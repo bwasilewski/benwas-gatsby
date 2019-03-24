@@ -20,9 +20,11 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <div className="container">
-          <p>Hi there, thanks for stopping by! My name is {data.site.siteMetadata.title} and I am a {data.site.siteMetadata.subtitle}. I primarily work with JavaScript (React, Vue, Express, etc) and Python to build applications that run quickly and dependably.</p>
-        </div>
+        <section className="section">
+          <div className="container">
+            <p>Hi there, thanks for stopping by! My name is {data.site.siteMetadata.title} and I am a {data.site.siteMetadata.subtitle}. I primarily work with JavaScript (React, Vue, Express, etc) and Python to build applications that run quickly and dependably.</p>
+          </div>
+        </section>
       </Layout>
     )}
   />
