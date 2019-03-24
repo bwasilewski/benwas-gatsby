@@ -13,6 +13,9 @@ const IndexPage = () => (
           siteMetadata {
             title
             subtitle
+            projects {
+              title
+            }
           }
         }
       }
@@ -23,6 +26,16 @@ const IndexPage = () => (
         <section className="section">
           <div className="container">
             <p>Hi there, thanks for stopping by! My name is {data.site.siteMetadata.title} and I am a {data.site.siteMetadata.subtitle}. I primarily work with JavaScript (React, Vue, Express, etc) and Python to build applications that run quickly and dependably.</p>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+            <h5 className="title is-5">Projects at a glance</h5>
+            <ul>
+              {data.site.siteMetadata.projects.map(project => (
+                <li>{project.title}</li>
+              ))}
+            </ul>
           </div>
         </section>
       </Layout>
