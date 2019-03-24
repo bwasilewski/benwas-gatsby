@@ -35,12 +35,19 @@ module.exports = {
     social_media: [
       {
         title: 'GitHub',
-        url: 'https://github.com/bwasilewski'
+        url: 'https://github.com/bwasilewski',
+        icon: 'github-alt'
       },
       {
         title: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/benwasilewski/'
+        url: 'https://www.linkedin.com/in/benwasilewski/',
+        icon: 'linkedin'
       },
+      {
+        title: 'Twitter',
+        url: 'http://www.twitter.com/ben___was/',
+        icon: 'twitter-square'
+      }
     ]
   },
   plugins: [
