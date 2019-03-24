@@ -5,6 +5,33 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Ben Wasilewski`,
     email: 'benwasilewski@gmail.com',
+    projects: [
+      {
+        title: 'SpotMyPhotos',
+        description: 'Lorem ipsum dolor sit amet.',
+        timeline: {
+          begin: 'February 2018',
+          end: 'Present'
+        },
+        tags: ['React', 'Redux', 'Electron']
+      }, {
+        title: 'Kuei Luck',
+        description: 'Lorem ipsum dolor sit amet.',
+        timeline: {
+          begin: 'July 2018',
+          end: 'March 2019'
+        },
+        tags: ['WordPress', 'WPEngine']
+      }, {
+        title: 'TFW Surveying & Mapping, Inc.',
+        description: 'Lorem ipsum dolor sit amet.',
+        timeline: {
+          begin: '2012',
+          end: 'Present'
+        },
+        tags: []
+      }
+    ],
     social_media: [
       {
         title: 'GitHub',
