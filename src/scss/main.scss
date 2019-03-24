@@ -1,6 +1,9 @@
 @charset 'utf-8';
 @import '../../node_modules/bulma/bulma';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
+
+@import './fonts';
 @import './sticky_footer';
 
 .section {
