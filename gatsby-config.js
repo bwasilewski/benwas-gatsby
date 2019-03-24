@@ -1,11 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Ben Wasilewski`,
+    subtitle: `Fullstack Web Developer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `Ben Wasilewski`,
+    email: 'benwasilewski@gmail.com',
+    social_media: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/bwasilewski'
+      },
+      {
+        title: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/benwasilewski/'
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
