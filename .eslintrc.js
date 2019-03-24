@@ -3,12 +3,13 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
         "module": "readonly",
-        "__dirname": "readonly"
+        "__dirname": "readonly",
+        "process": "readonly"
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -21,5 +22,19 @@ module.exports = {
         "react"
     ],
     "rules": {
+      "no-console": 0,
+      "indent": [
+        "error",
+        2
+      ],
+      // "quotes": [
+      //   "error",
+      //   "single"
+      // ],
+      // "allowTemplateLiterals": true,
+      "semi": [
+        "error",
+        "never"
+      ]
     }
 };
