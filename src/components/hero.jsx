@@ -1,18 +1,24 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Hero = () => (
-  <section className="hero is-medium is-primary is-bold">
+const Hero = ({siteTitle, siteSubtitle}) => (
+  <section className="hero is-primary is-bold">
     <div className="hero-body">
       <div className="container">
         <h1 className="title">
-          Primary bold title
+          {siteTitle}
         </h1>
         <h2 className="subtitle">
-          Primary bold subtitle
+          {siteSubtitle}
         </h2>
       </div>
     </div>
   </section>
 )
+
+Hero.propTypes = {
+  siteTitle: PropTypes.string,
+  siteSubtitle: PropTypes.string
+}
 
 export default Hero
