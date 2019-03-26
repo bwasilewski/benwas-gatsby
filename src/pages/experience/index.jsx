@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import Project from '../../components/project'
+import FilterPanel from '../../components/filterpanel'
 
 import uniqid from 'uniqid'
 
@@ -68,42 +69,43 @@ const ProjectsPage = () => (
           <SEO title="Experience Page" />
           <section className="section">
             <div className="container">
-              <h2 className="title is-2">Experience</h2>
+              <div className="columns">
+                <div className="column is-one-quarter">
+                  <FilterPanel />
+                </div>
+                <div className="column">
+                  {data.site.siteMetadata.projects.map(project => {
+                    let logoPath = project.logo
+                    let screenPath = project.screen
+                    let logoData = {}
+                    let screenData = {}
 
-              {data.site.siteMetadata.projects.map(project => {
-                let logoPath = project.logo
-                let screenPath = project.screen
-                let logoData = {}
-                let screenData = {}
+                    dataLogos.map(logo => {
+                      if ( logo.node.relativePath === logoPath ) {
+                        logoData = logo.node
+                      }
+                    })
 
-                console.log('Project: ', project)
+                    dataScreens.map(screen => {
+                      console.log('Screen: ', screen)
+                      if ( screen.node.relativePath === screenPath ) {
+                        screenData = screen.node
+                      }
+                    })
 
-                dataLogos.map(logo => {
-                  if ( logo.node.relativePath === logoPath ) {
-                    logoData = logo.node
-                  }
-                })
-
-                dataScreens.map(screen => {
-                  console.log('Screen: ', screen)
-                  if ( screen.node.relativePath === screenPath ) {
-                    screenData = screen.node
-                  }
-                })
-
-                console.log('Screen Data: ', screenData)
-
-                return (
-                  <Project
-                    key={uniqid()}
-                    title={project.title}
-                    description={project.description}
-                    timeline={project.timeline}
-                    tags={project.tags}
-                    logo={logoData}
-                    screen={screenData} />
-                )
-              })}
+                    return (
+                      <Project
+                        key={uniqid()}
+                        title={project.title}
+                        description={project.description}
+                        timeline={project.timeline}
+                        tags={project.tags}
+                        logo={logoData}
+                        screen={screenData} />
+                    )
+                  })}
+                </div>
+              </div>
             </div>
           </section>
         </Layout>
