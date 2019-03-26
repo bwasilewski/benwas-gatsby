@@ -14,7 +14,7 @@ module.exports = {
           end: 'Present'
         },
         tags: ['React', 'Redux', 'WebPack', 'Electron'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: null,
         logo: 'spotmyphotos-logo-dark.png'
       },
       {
@@ -25,7 +25,7 @@ module.exports = {
           end: 'March 2019'
         },
         tags: ['WordPress', 'Gulp', 'Vagrant', 'WPEngine'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'kueiluck.png',
         logo: 'kuei_luck.svg'
       },
       {
@@ -36,7 +36,7 @@ module.exports = {
           end: 'September 2018'
         },
         tags: ['WordPress', 'Gulp', 'Docker'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'techgami.png',
         logo: 'techgami.svg'
       },
       {
@@ -47,7 +47,7 @@ module.exports = {
           end: 'September 2018'
         },
         tags: ['WordPress', 'Gulp', 'Vagrant', 'WPML'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'arcserve.png',
         logo: 'Arcserve_logo_black.png'
       },
       {
@@ -58,7 +58,7 @@ module.exports = {
           end: 'August 2018'
         },
         tags: ['Gulp', 'Static Website'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'cityeyecenter.png',
         logo: 'city_eye_center.png'
       },
       {
@@ -69,7 +69,7 @@ module.exports = {
           end: 'Present'
         },
         tags: ['WordPress', 'Gulp', 'Vagrant'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: null,
         logo: 'grow-media-logo.png'
       },
       {
@@ -80,7 +80,7 @@ module.exports = {
           end: 'Present'
         },
         tags: ['Gulp', 'Static Site'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'bonitabeach.png',
         logo: null
       },
       {
@@ -91,7 +91,7 @@ module.exports = {
           end: 'July 2018'
         },
         tags: ['Backbone', 'Django'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: null,
         logo: 'apervitalogo_2c_blue_217x60.png'
       },
       {
@@ -102,7 +102,7 @@ module.exports = {
           end: 'Present'
         },
         tags: ['Grunt', 'WordPress'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'kkwalker.png',
         logo: null
       },
       {
@@ -113,7 +113,7 @@ module.exports = {
           end: 'Present'
         },
         tags: ['Gulp', 'Static Website'],
-        screen: 'spotmyphotos-logo-dark.png',
+        screen: 'tfw.png',
         logo: 'tfw.png'
       }
     ],
