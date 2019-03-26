@@ -1,14 +1,25 @@
 @charset 'utf-8';
+@import './variables.scss';
 @import '../../node_modules/bulma/bulma';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
-
+@import '../../node_modules/animate.css/animate.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css');
 
 @import './fonts';
 @import './sticky_footer';
+
+.is-flex {
+  flex-direction: column;
+  justify-content: center;
+}
 
 .section {
   .section {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.testimonial {
+  // height: 300px;
 }
