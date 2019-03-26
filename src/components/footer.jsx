@@ -1,24 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import Icon from './icon'
 import uniqid from 'uniqid'
 
 const Footer = ({siteTitle, social}) => (
   <footer>
-    <nav className="navbar is-black">
+    <nav className="navbar is-transparent">
       <div className="container">
+        <div className="navbar-brand"></div>
         <div className="navbar-menu">
           <div className="navbar-start">
-            <Link className="navbar-item" to="/">Home</Link>
-            <Link className="navbar-item" to="/about/">About</Link>
-            <Link className="navbar-item" to="/projects/">Projects</Link>
-            <Link className="navbar-item" to="/contact/">Contact</Link>
             {social.map(item => (
-              <a key={uniqid()} className="navbar-item" href={item.url}>
-                <span className="icon">
-                  <i className={`fab fa-${item.icon} has-text-white`}></i>
-                </span>
-              </a>
+              <Icon key={uniqid()} url={item.url} icon={item.icon} />
             ))}
           </div>
           <div className="navbar-end">
